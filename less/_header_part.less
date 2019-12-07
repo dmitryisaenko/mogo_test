@@ -1,0 +1,110 @@
+header.main{
+    // border: 1px solid red;
+    height: 73px;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../img/db_line.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.8);
+    left: 0;
+    position: absolute;
+    top: 0px;
+    
+    width: 100%;
+    z-index: 1001;
+}
+
+.logo_mini{
+    margin: 12px auto;
+    // margin-top: 12px;
+    padding: 0px 20px;
+    max-width: 150px;
+}
+
+.nav_wrap{
+    // width: 70%;
+}
+
+nav{
+    margin-top: 16px;
+    width: 620px;
+    z-index: 101;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li{
+    // display: flex;
+    // justify-content: space-between;
+}
+
+nav a{
+    .roboto-light;
+    text-decoration: none;
+    color: #000000;
+    font-family: Roboto;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+
+
+.toggle-button {
+    display: none;
+    margin: 14px auto;
+    width: 44px;
+    position: relative;
+    height: 40px;
+    padding: 4px;
+    transition: .25s;
+    // z-index: 11111115;
+  }
+  .toggle-button:hover {
+    cursor: pointer;
+  }
+  .toggle-button .menu-bar {
+    position: absolute;
+    border-radius: 2px;
+    width: 70%;
+    transition: .5s;
+  }
+  .toggle-button .menu-bar-top {
+    border: 4px solid #555;
+    border-bottom: none;
+    top: 0;
+  }
+  .toggle-button .menu-bar-middle {
+    height: 4px;
+    background-color: #555;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    top: 4px;
+    width: 85%;
+  }
+  .toggle-button .menu-bar-bottom {
+    border: 4px solid #555;
+    border-top: none;
+    top: 22px;
+  }
+  .button-open .menu-bar-top {
+    transform: rotate(45deg) translate(8px, 8px);
+    transition: .5s;
+  }
+  .button-open .menu-bar-middle {
+    transform: translate(230px);
+    transition: .1s ease-in;
+    opacity: 0;
+  }
+  .button-open .menu-bar-bottom {
+    transform: rotate(-45deg) translate(8px, -7px);
+    transition: .5s;
+  }
+
