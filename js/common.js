@@ -1,26 +1,42 @@
 
 $(document).ready(function(){
-    $('#owl_first').owlCarousel({
-        margin:1,
-        loop:true,
-        autoWidth:true,
-        items:2,
-        autoplay:true,
-        autoplaySpeed: 1000,
-        autoplayTimeout:4000,
-        autoplayHoverPause:true
+    var $slideItem = $( "ul.carousel-dots li" );
+    var ifClick = false;
+    $slideItem.on('click', function (event) {
+        event.preventDefault();
+        $( "ul.carousel-dots li" ).not(this).removeClass("active");
+        $(this).addClass("active");
+        ifClick = true;
     });
 
+    $('#header-carousel').on('slide.bs.carousel', function (ev) {
+        if (ifClick) {
+            ifClick = false;
+        }
+        else {
+            console.log(ev.relatedTarget);
+            $holder = $( "ul.carousel-dots li.active" );
+            $holder.next( "li" ).addClass("active");
+            if($holder.is(':last-child'))
+            {
+                $holder.removeClass("active");
+                $("ul.carousel-dots li:first").addClass("active");
+            }
+            $holder.removeClass("active");
+        }
+    });
     
-
+    
 
     // Скрытие/отображение пунктов меню для моб. версии
     var $toggleButton = $('.toggle-button'),
-        $navWrap = $('nav');
+        $navWrap = $('.nav-wrap');
+        $learnButton = $('.header-content a.learn-more-btn');
         $toggleButton.on('click', function() {
-        $(this).toggleClass('button-open');
-        $navWrap.toggleClass('menu-show');
-    });
+            $(this).toggleClass('button-open');
+            $navWrap.toggleClass('menu-show');
+            $learnButton.toggleClass('zindex2');
+        });
 
     // Плавный переход между разделами сайта при клике на пункты меню
     $("#menu").on("click","a", function (event) {

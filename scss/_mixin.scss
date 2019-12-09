@@ -1,0 +1,15 @@
+@mixin divHeight($height) {
+    // your SCSS here, e.g.
+    header{
+        height: $height;
+    }
+    .slide-img{
+        height: $height;
+    }
+    .header-content{
+        height: $height;
+    }
+    .subheader{
+        height: $height;
+    }
+}

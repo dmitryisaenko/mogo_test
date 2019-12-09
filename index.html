@@ -8,9 +8,9 @@
     <meta name="keywords" content="Ключевые слова">
     <meta name="description" content="Описание контента страницы">
     <link rel="stylesheet" href="css/normalize.css">    
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="css/fonts.css" type="text/css" /> -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto:300,400&display=swap" rel="stylesheet">
     <!-- <link rel="stylesheet" href="libs/owl-carousel/owl.carousel.min.css"> -->
     <!-- <link rel="stylesheet" href="libs/owl-carousel/owl.theme.default.min.css"> -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -20,47 +20,66 @@
     <link rel="stylesheet" href="css/media.css" type="text/css" />
 </head>
 <body>    
-        
+    
+    <!-- Навигация на моб. устройствах, меньше 991px -->
+    <span class="toggle-button">
+        <div class="menu-bar menu-bar-top"></div>
+        <div class="menu-bar menu-bar-middle"></div>
+        <div class="menu-bar menu-bar-bottom"></div>
+    </span>
+
     <!-- Header страницы -->
     <header>
-        <!-- <div class="logo_mini">
-            <a href="#">
-                <img src="img/logo_mini.png" alt="Mini logo">
-            </a>
-        </div> -->
-        
-        <!-- Навигация на моб. устройствах, меньше 576px -->
-        <span class="toggle-button">
-        	<div class="menu-bar menu-bar-top"></div>
-        	<div class="menu-bar menu-bar-middle"></div>
-        	<div class="menu-bar menu-bar-bottom"></div>
-        </span>
-        111
-        <!-- Главная Навигация по сайту -->
-        <div class="menu-wrap">
-			<div class="menu-sidebar">
-				<ul class="menu">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Blog</a></li>
-					<li class="menu-item-has-children"><a href="#">Click The Arrow</a>
-						<span class="sidebar-menu-arrow"></span>
-						<ul class="sub-menu">
-							<li><a href="#">Alignment</a></li>
-							<li><a href="#">Markup</a></li>
-							<li><a href="#">Comments</a></li>
-						</ul>
-					</li>
-					<li><a href="#">Courses</a></li>
-					<li><a href="#">Get In Touch</a></li>
-				</ul>			
-			</div>
-		</div>
+            <div id="header-carousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="slide-img">
+                                <div class="container">
+                                    <div class="header-content">
+                                        <h3>Creative Template</h3>
+                                        <h4>Welcome<br>to MoGo1</h4>
+                                        <a class="learn-more-btn" href="#">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="carousel-item">
+                            <div class="slide-img">
+                                <div class="container">
+                                    <div class="header-content">
+                                        <h3>Creative Template</h3>
+                                        <h4>Welcome<br>to MoGo2</h4>
+                                        <a class="learn-more-btn" href="#">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="slide-img">
+                                <div class="container">
+                                    <div class="header-content">
+                                        <h3>Creative Template</h3>
+                                        <h4>Welcome<br>to MoGo3</h4>
+                                        <a class="learn-more-btn" href="#">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="slide-img">
+                                <div class="container">
+                                    <div class="header-content">
+                                        <h3>Creative Template</h3>
+                                        <h4>Welcome<br>to MoGo4</h4>
+                                        <a class="learn-more-btn" href="#">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                    
+                </div>
     </header>
-    
-    <div class="top-slider">
-        
-    </div>
         
     
         
@@ -68,13 +87,37 @@
     
 
     <!-- Основное содержимое страниц -->
-    <main>            
-        <section class="slider_first">
-            <div>
-
-
+    <main>
+        <div class="container">           
+            <div class="subheader">
+                <div class="subheader__top">
+                    <div class="site-logo">
+                        <a class="site-logo-link" href="#">MoGo</a>
+                    </div>
+                    <nav class="nav-wrap">
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Service</a></li>
+                            <li><a href="#">Work</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                            <li><a href="#"><i class="fas fa-search"></i></a></li>
+                        </ul>
+                    </nav> 
+                    
+                    
+                </div>
+                <div class="subheader__bottom">
+                        <ul class="carousel-dots">
+                            <li data-target="#header-carousel" data-slide-to="0" class="active"><div class="carousel-dots__title"><span>01</span> Intro</div></li>
+                            <li data-target="#header-carousel" data-slide-to="1"><div class="carousel-dots__title"><span>02</span> Work</div></li>
+                            <li data-target="#header-carousel" data-slide-to="2"><div class="carousel-dots__title"><span>03</span> About</div></li>
+                            <li data-target="#header-carousel" data-slide-to="3"><div class="carousel-dots__title"><span>04</span> Contacts</div></li>
+                        </ul>
+                </div>
             </div>
-        </section>
+        </div>
         
     </main>
 
@@ -98,10 +141,12 @@
         <i class="fa fa-angle-up" aria-hidden="true"></i>
     </div>
     
-    <script src="libs/jquery-3.2.1.min.js"></script>
+    <!-- <script src="libs/jquery-3.2.1.min.js"></script> -->
     <!-- <script src="libs/owl-carousel/owl.carousel.min.js"></script> -->    
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="js/common.js"></script>
 </body>
 
