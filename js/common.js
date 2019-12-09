@@ -14,7 +14,6 @@ $(document).ready(function(){
             ifClick = false;
         }
         else {
-            console.log(ev.relatedTarget);
             $holder = $( "ul.carousel-dots li.active" );
             $holder.next( "li" ).addClass("active");
             if($holder.is(':last-child'))
