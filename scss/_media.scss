@@ -107,7 +107,7 @@
                 height: 510px;
                 top: 0;
                 right: -320px;
-                background-color: #fce38a;
+                background-color: $color-yellow;
                 border-bottom-left-radius: 5px;
                 box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
                 transition: .5s;
@@ -189,6 +189,12 @@
             }
 
         }
+    }
+}
+
+.blog{
+    .item{
+        margin-bottom: 40px;
     }
 }
 

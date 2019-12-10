@@ -13,7 +13,7 @@ ul{
 	transition: .25s;
   z-index: 15;
   display: none;
-  border: 1px solid #fce38a;
+  border: 1px solid $color-yellow;
     border-radius: 4px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
 }
@@ -28,19 +28,19 @@ ul{
 	transition: .5s;
 }
 .toggle-button .menu-bar-top {
-	border: 4px solid #fce38a;
+	border: 4px solid $color-yellow;
 	border-bottom: none;
 	top: 6px;
 }
 .toggle-button .menu-bar-middle {
 	height: 4px;
-	background-color: #fce38a;
+	background-color: $color-yellow;
 	margin-top: 7px;
 	margin-bottom: 7px;
 	top: 10px;
 }
 .toggle-button .menu-bar-bottom {
-	border: 4px solid #fce38a;
+	border: 4px solid $color-yellow;
 	border-top: none;
 	top: 28px;
 }
