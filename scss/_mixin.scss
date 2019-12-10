@@ -12,3 +12,37 @@
         height: $height;
     }
 }
+
+%section-header{
+    padding-top: 110px;
+    position: relative;
+
+    h3 {
+        font-family: Kaushan Script;
+        font-size: 24px;
+        font-weight: 400;
+        color: #333333;
+        text-align: center;
+    }
+
+    h2{
+        margin-top: 25px;
+        margin-bottom: 100px;
+        font-family: Montserrat;
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #333333;
+        text-align: center;
+    }
+
+    &::after{
+        content: '';
+        position: absolute;
+        border-bottom: 3px solid $color-red;
+        width: 60px;
+        margin-left: -30px;
+        left: 50%;
+        top: 240px;
+    }
+}

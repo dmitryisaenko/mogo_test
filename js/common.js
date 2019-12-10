@@ -37,6 +37,19 @@ $(document).ready(function(){
             $learnButton.toggleClass('zindex2');
         });
 
+    // $('body,html').on('click', function() {
+    //     $navWrap.removeClass('menu-show');
+    // });
+
+    // $(document).mouseup(e => {
+    //     if ( ($toggleButton.is(e.target) || (!$navWrap.is(e.target) && $navWrap.has(e.target).length === 0) ))
+    //     {
+    //             $toggleButton.removeClass('button-open');
+    //             $navWrap.removeClass('menu-show');
+    //             $toggleButton.removeClass('button-open');
+    //         }
+    // });
+
     // Плавный переход между разделами сайта при клике на пункты меню
     $("#menu").on("click","a", function (event) {
         event.preventDefault();
@@ -46,7 +59,9 @@ $(document).ready(function(){
     });
 
     
-    // Кнпка "Наверх" с появлением
+
+    
+    // Кнопка "Наверх" с появлением
     var top_show = 550; // В каком положении полосы прокрутки начинать показ кнопки "Наверх"
     var delay = 1000; // Задержка прокрутки
     $(document).ready(function() {
