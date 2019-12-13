@@ -80,7 +80,24 @@
 /* ----------------- ЗНАЧЕНИЕ И МЕНЬШЕ -----------------*/
 /*1200 и меньше */
 @media only screen and (max-width : 1200px) {
-	
+	.whatWeDo{
+
+        .whatwedo-wrapper{
+
+            .whatwedo-accordion{
+
+                .card-header{
+                    .arrow-down {
+                        left: 410px;
+                    }
+    
+                    .arrow-down.collapsed{
+                        left: 410px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 /*991 и меньше */
@@ -143,6 +160,25 @@
     .toggle-button {
         display: block;
     }
+
+    .whatWeDo{
+
+        .whatwedo-wrapper{
+
+            .whatwedo-accordion{
+
+                .card-header{
+                    .arrow-down {
+                        left: 290px;
+                    }
+    
+                    .arrow-down.collapsed{
+                        left: 290px;
+                    }
+                }
+            }
+        }
+    }
 }
  
 /*880 и меньше */
@@ -190,12 +226,49 @@
 
         }
     }
-}
+
+    .whatWeDo{
+        height: 1200px;
+        padding-top: 40px;
+
+        &::after {
+            top: 170px;
+        }
+
+        .whatWeDo-subheader{
+            width: 100%;
+        }
+
+        .whatwedo-wrapper{
+
+            .whatwedo-accordion{
+                margin-top: 30px;
+
+                .card-header{
+                    .arrow-down {
+                        left: 87%;
+                    }
+    
+                    .arrow-down.collapsed{
+                        left: 87%;
+                    }
+                }
+            }
+        }
+    }
+
 
 .blog{
+
+    .blog-items{
+        margin-bottom: 0;
+    }
+
     .item{
         margin-bottom: 40px;
     }
+}
+
 }
 
 /*621 и меньше */
@@ -206,7 +279,9 @@
 
 /*576 и меньше */
 @media only screen and (max-width: 576px) {
-	
+	.card-body{
+        font-size:13px!important;
+    }
 }
 
 /*420 и меньше */

@@ -5,8 +5,141 @@
 
     @extend %section-header;
 
+
     .items{
 
     }
+    .whatWeDo-subheader{
+        display: inline-block;
+        font-family: Roboto;
+        font-size: 15px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #999999;
+        text-align: center;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-bottom: 90px;
+    }
+    
+
+    .whatwedo-wrapper{
+        height: 380px;
+        
+        .whatwedo-img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .whatwedo-accordion{
+            height: 380px;
+
+            .card{
+                border-radius: 0px;
+                box-shadow: none;
+
+                &:not(:first-child){
+                    margin-top: 10px;
+                }
+
+                
+            }
+
+            .collapse:not(.show){
+                border-bottom: 1px;  
+            }
+
+            .card-header{
+                height: 60px;
+                background-color: #fff;
+                padding: 14px 16px;
+                position: relative;
+
+                
+                .btn-link{
+                    font-family: Montserrat;
+                    font-size: 14px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    color: #333333;
+                    padding: 0;
+                    position: relative;
+
+                    &:active, &:hover, &:focus{
+                        text-decoration: none;
+                    }
+
+                    .card-header__img{
+                        padding-right: 16px;
+                    }
+                }
+
+                .arrow-down {
+                    position: absolute;
+                    top: 24px;
+                    left: 500px;
+                    width: 22px;
+                    height: 12px;
+                    background: url(../img/arrow_down.png);
+                    transition: all 0.3s linear;
+                    background-repeat: no-repeat;
+                    transform: scale(1, -1);
+                }
+
+                .arrow-down.collapsed{
+                    position: absolute;
+                    top: 24px;
+                    left: 500px;
+                    width: 22px;
+                    height: 12px;
+                    background: url(../img/arrow_down.png);
+                    transition: all 0.3s linear;
+                    background-repeat: no-repeat;
+                    transform: none;
+                    // transform-origin: top left;
+                }
+
+                
+            }
+
+            .card-body{
+                height: 165px;
+                overflow-y: scroll;
+                overflow-x: hidden;
+                font-family: Roboto;
+                font-size: 15px;
+                line-height: 24px;
+                font-weight: 300;
+                font-style: italic;
+                color: #999999;
+                position: relative;
+                border-bottom: 20px solid #fff;
+                border-top: 20px solid #fff;
+                padding: 0px 20px;
+                margin-bottom: 10px;
+                box-shadow: none;
+                min-height: 0px;
+
+                
+
+                &::-webkit-scrollbar-track {
+                    background-color: #EEF5F8;
+                  }
+                &::-webkit-scrollbar {
+                    width: 5px;
+                    height: 90px;
+                }
+                &::-webkit-scrollbar-thumb {
+                    border-radius: 3px;
+                    background-color: $color-ocean;
+                }
+            }
+
+            
+        }
+    }
+
+    
 
 }
