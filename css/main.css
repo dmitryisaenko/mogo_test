@@ -1,14 +1,14 @@
 @charset "UTF-8";
-.blog, .whatWeDo {
+.blog, .whatWeDo, .ourTeam {
   padding-top: 110px;
   position: relative; }
-  .blog h3, .whatWeDo h3 {
+  .blog h3, .whatWeDo h3, .ourTeam h3 {
     font-family: Kaushan Script;
     font-size: 24px;
     font-weight: 400;
     color: #333333;
     text-align: center; }
-  .blog h2, .whatWeDo h2 {
+  .blog h2, .whatWeDo h2, .ourTeam h2 {
     margin-top: 25px;
     margin-bottom: 100px;
     font-family: Montserrat;
@@ -17,7 +17,7 @@
     text-transform: uppercase;
     color: #333333;
     text-align: center; }
-  .blog::after, .whatWeDo::after {
+  .blog::after, .whatWeDo::after, .ourTeam::after {
     content: '';
     position: absolute;
     border-bottom: 3px solid #f38181;
@@ -499,7 +499,6 @@ header {
   height: 900px;
   background-color: #f8f8f8; }
   .whatWeDo .whatWeDo-subheader {
-    display: inline-block;
     font-family: Roboto;
     font-size: 15px;
     line-height: 24px;
@@ -598,12 +597,130 @@ header {
           border-radius: 3px;
           background-color: #95e1d3; }
 
-.text {
-  border: 1px solid red; }
+.ourTeam {
+  width: 100%;
+  height: 1050px;
+  background-color: #fff; }
+  .ourTeam .ourTeam-subheader {
+    font-family: Roboto;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #999999;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 90px; }
+  .ourTeam .ourTeam-item {
+    width: 100%;
+    max-width: 380px;
+    height: auto; }
+    .ourTeam .ourTeam-item .ourTeam-item__img {
+      width: 100%;
+      height: auto;
+      position: relative; }
+      .ourTeam .ourTeam-item .ourTeam-item__img img {
+        width: 100%;
+        height: auto;
+        position: relative;
+        display: block; }
+      .ourTeam .ourTeam-item .ourTeam-item__img .overlay {
+        position: absolute;
+        top: -10px;
+        bottom: 0;
+        left: -10px;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        z-index: 3;
+        -webkit-transition: .3s ease;
+        -o-transition: .3s ease;
+        transition: .3s ease;
+        background-image: -webkit-gradient(linear, left bottom, left top, from(#fce38a), to(#f38181));
+        background-image: -o-linear-gradient(bottom, #fce38a 0%, #f38181 100%);
+        background-image: linear-gradient(0deg, #fce38a 0%, #f38181 100%);
+        -webkit-box-shadow: 10px 10px #95e1d3;
+                box-shadow: 10px 10px #95e1d3;
+        -webkit-transition: -webkit-box-shadow none;
+        transition: -webkit-box-shadow none;
+        -o-transition: box-shadow none;
+        transition: box-shadow none;
+        transition: box-shadow none, -webkit-box-shadow none; }
+        .ourTeam .ourTeam-item .ourTeam-item__img .overlay .socials {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          margin-left: -112px;
+          margin-top: -28px; }
+          .ourTeam .ourTeam-item .ourTeam-item__img .overlay .socials ul {
+            list-style: none;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex; }
+            .ourTeam .ourTeam-item .ourTeam-item__img .overlay .socials ul li {
+              border: 1px solid #f38181;
+              width: 56px;
+              height: 56px;
+              background-color: #fce38a;
+              text-align: center;
+              line-height: 52px; }
+              .ourTeam .ourTeam-item .ourTeam-item__img .overlay .socials ul li a {
+                font-size: 26px;
+                text-decoration: none;
+                color: #f38181;
+                -webkit-transition: .5s ease;
+                -o-transition: .5s ease;
+                transition: .5s ease;
+                width: 100%;
+                height: 100%;
+                display: block; }
+                .ourTeam .ourTeam-item .ourTeam-item__img .overlay .socials ul li a:hover {
+                  color: #fff; }
+              .ourTeam .ourTeam-item .ourTeam-item__img .overlay .socials ul li:not(:first-child) {
+                margin-left: -1px; }
+              .ourTeam .ourTeam-item .ourTeam-item__img .overlay .socials ul li:hover {
+                background-color: #f38181;
+                cursor: pointer; }
+              .ourTeam .ourTeam-item .ourTeam-item__img .overlay .socials ul li:hover a {
+                color: #fff; }
+        .ourTeam .ourTeam-item .ourTeam-item__img .overlay:hover {
+          opacity: 1; }
+    .ourTeam .ourTeam-item .ourTeam-item__descr {
+      margin-top: 30px;
+      margin-bottom: 50px;
+      width: 100%; }
+      .ourTeam .ourTeam-item .ourTeam-item__descr .ourTeam-item__descr-name {
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #333333;
+        text-align: center; }
+      .ourTeam .ourTeam-item .ourTeam-item__descr .ourTeam-item__descr-role {
+        font-family: Roboto;
+        font-size: 15px;
+        line-height: 24px;
+        font-weight: 300;
+        font-style: italic;
+        color: #999999;
+        text-align: center; }
 
 /*(1200 и больше) Large Devices, Wide Screens */
 /*(992-1199) Medium Devices1, Desktops1 */
 /*(768-991) Medium Devices2, Desktops2 */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .ourTeam .ourTeam-item .ourTeam-item__img .overlay .socials {
+    margin-left: -60px;
+    margin-top: -15px; }
+    .ourTeam .ourTeam-item .ourTeam-item__img .overlay .socials ul li {
+      width: 30px;
+      height: 30px;
+      line-height: 30px; }
+      .ourTeam .ourTeam-item .ourTeam-item__img .overlay .socials ul li a {
+        font-size: 13px; } }
+
 /*(576-767) Small Devices, Tablets */
 /*(321-575) Extra Small Devices, Phones */
 /*(320 и меньше) Custom, iPhone Retina */
@@ -750,7 +867,16 @@ header {
         display: none; }
       .subheader .subheader__bottom ul.carousel-dots li:before {
         bottom: 9px;
-        width: 55px; } }
+        width: 55px; }
+  .ourTeam .ourTeam-item .ourTeam-item__img .overlay .socials {
+    margin-left: -26vw;
+    margin-top: -3vh; }
+    .ourTeam .ourTeam-item .ourTeam-item__img .overlay .socials ul li {
+      width: 13vw;
+      height: 13vw;
+      line-height: 13vw; }
+      .ourTeam .ourTeam-item .ourTeam-item__img .overlay .socials ul li a {
+        font-size: 7vw; } }
 
 /*320 и меньше */
 @media only screen and (max-width: 320px) {

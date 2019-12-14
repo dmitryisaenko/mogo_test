@@ -15,7 +15,28 @@
 /*(768-991) Medium Devices2, Desktops2 */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	
-
+    .ourTeam{
+        .ourTeam-item{
+            .ourTeam-item__img{
+                .overlay {
+                    .socials{
+                        margin-left: -60px;
+                        margin-top: -15px;
+                        ul{
+                            li{
+                                width: 30px;
+                                height: 30px;
+                                line-height: 30px;
+                                a{
+                                    font-size: 13px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 
 
 }
@@ -179,6 +200,8 @@
             }
         }
     }
+
+    
 }
  
 /*880 и меньше */
@@ -321,6 +344,28 @@
 
             }
 
+        }
+    }
+    .ourTeam{
+        .ourTeam-item{
+            .ourTeam-item__img{
+                .overlay {
+                    .socials{
+                        margin-left: -26vw;
+                        margin-top: -3vh;
+                        ul{
+                            li{
+                                width: 13vw;
+                                height: 13vw;
+                                line-height: 13vw;
+                                a{
+                                    font-size: 7vw;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

@@ -10,7 +10,7 @@
         <meta name="description" content="Описание контента страницы">
         <link rel="stylesheet" href="css/normalize.css">    
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto:300,400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,600,700|Roboto:300,400&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <link rel='stylesheet' id='font-awesome-css'  href='https://use.fontawesome.com/releases/v5.3.1/css/all.css' type='text/css' media='all' />
@@ -230,9 +230,9 @@
                             <div class="col-md-6">
                                 <div class="whatwedo-accordion" id="whatwedo-accordion">
                                     <div class="card">
-                                        <div class="card-header" id="headingOne">
+                                        <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne">
                                             <h5 class="mb-0">
-                                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                <button class="btn btn-link" type="button"  aria-expanded="true" aria-controls="collapseOne">
                                                         <img class="card-header__img" src="img/photography.png" alt="Photography">Photography
                                                 </button>
                                             </h5>
@@ -246,9 +246,9 @@
                                         </div>
                                     </div>
                                     <div class="card">
-                                        <div class="card-header" id="headingTwo">
+                                        <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo">
                                             <h5 class="mb-0">
-                                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                <button class="btn btn-link collapsed" type="button"  aria-expanded="false" aria-controls="collapseTwo">
                                                         <img class="card-header__img" src="img/creativity.png" alt="Creativity">Creativity
                                                 </button>
                                             </h5>
@@ -261,9 +261,9 @@
                                         </div>
                                     </div>
                                     <div class="card">
-                                        <div class="card-header" id="headingThree">
+                                        <div class="card-header" id="headingThree" data-toggle="collapse" data-target="#collapseThree">
                                             <h5 class="mb-0">
-                                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                <button class="btn btn-link collapsed" type="button"  aria-expanded="false" aria-controls="collapseThree">
                                                         <img class="card-header__img" src="img/circles.png" alt="Web design">Web design
                                                 </button>
                                             </h5>
@@ -281,6 +281,98 @@
                     </div>
                 </div>
             </section>
+
+            <section class="ourTeam" id="ourTeam">
+                <div class="container">
+                    <div class="section-header">
+                        <h3>Who we are</h3>
+                        <h2>Meet our team</h2>
+                    </div>
+                    <div class="ourTeam-subheader">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio assumenda dignissimos rem, magnam veritatis tempora, excepturi dolores temporibus, facere sint eveniet porro aut dolorem quo recusandae repellendus cumque debitis reiciendis. Earum quia provident vitae sit tenetur culpa illum et
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 mx-auto">
+                            <div class="ourTeam-item mx-auto d-block">
+                                <div class="ourTeam-item__img">
+                                    <img src="img/ourteam_01.png" alt="">
+                                    <div class="overlay-medium"></div>
+                                    <div class="overlay">
+                                        <div class="socials">
+                                            <ul>
+                                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ourTeam-item__descr">
+                                    <div class="ourTeam-item__descr-name">
+                                        Matthew Dix
+                                    </div>
+                                    <div class="ourTeam-item__descr-role">
+                                        Graphic Design
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="ourTeam-item mx-auto d-block">
+                                <div class="ourTeam-item__img">
+                                    <img src="img/ourteam_02.png" alt="">
+                                    <div class="overlay-medium"></div>
+                                    <div class="overlay">
+                                        <div class="socials">
+                                            <ul>
+                                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ourTeam-item__descr">
+                                    <div class="ourTeam-item__descr-name">
+                                        Matthew Dix
+                                    </div>
+                                    <div class="ourTeam-item__descr-role">
+                                        Graphic Design
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="ourTeam-item mx-auto d-block">
+                                <div class="ourTeam-item__img">
+                                    <img src="img/ourteam_01.png" alt="">
+                                    <div class="overlay">
+                                        <div class="socials">
+                                            <ul>
+                                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ourTeam-item__descr">
+                                    <div class="ourTeam-item__descr-name">
+                                        Matthew Dix
+                                    </div>
+                                    <div class="ourTeam-item__descr-role">
+                                        Graphic Design
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             
         </main>
         
